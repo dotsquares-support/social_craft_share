@@ -1,0 +1,62 @@
+{#
+/**
+ * Social Share plugin for Craft CMS 3.x
+ *
+ *
+ * @author    Dotsquares
+ * @copyright Copyright (c) 2021 Dotsquares
+ * @link      https://www.dotsquares.com/
+ 
+ */
+ #}
+
+{% import "_includes/forms" as forms %}
+
+<p>{{ "Enable the social channels which you wanna show in the front end."|t("dssocialshare")}}</p>
+
+
+{{ forms.checkboxField({
+    label: 'Facebook'|t('dssocialshare'),
+    id: 'Fb',
+    name: 'Fb',
+  checked: settings.Fb,
+
+}) }}
+
+
+
+{{ forms.checkboxField({
+    label: 'Reddit'|t('dssocialshare'),
+    id: 'Instagram',
+    name: 'Instagram',
+  checked: settings.Instagram,
+
+}) }}
+
+
+{{ forms.checkboxField({
+    label: 'Linkedin'|t('dssocialshare'),
+    id: 'Linkedin',
+    name: 'Linkedin',
+  checked: settings.Linkedin,
+
+}) }}
+
+
+{{ forms.checkboxField({
+    label: 'Twitter'|t('dssocialshare'),
+    id: "Twitter",
+    name: 'Twitter',
+    checked: settings.Twitter,
+}) }}
+
+{{ forms.checkboxField({
+    label:'Pintereset'|t('dssocialshare'),
+    id: 'Pintereset',
+    name: 'Pintereset',
+    checked: settings.Pintereset,
+}) }}
+
+
+
+
